@@ -11,6 +11,14 @@
 @media screen and  (min-width: $desktop-adapt)  {
   height: 600px;
     margin-bottom: 94px;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url("../../img/studio-img/hero@2x.jpeg");
+    }
+
+
 }
 
 background-color: $hero_footer-background;
