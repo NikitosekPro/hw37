@@ -520,7 +520,7 @@ header li a:hover {
 }
 
 .hero {
-  width: 100%;
+  width: 1600px;
   height: 400px;
   margin: 0 auto;
   margin-bottom: 60px;
@@ -528,15 +528,20 @@ header li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-size: cover;
+  background-size: 1600px;
   background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/studio-img/hero.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/studio-img/hero.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/studio-img/hero@2x.jpeg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/studio-img/hero@2x.jpeg);
 }
 @media screen and (min-width: 1200px) {
   .hero {
     height: 600px;
     margin-bottom: 94px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../../img/studio-img/hero@2x.jpeg");
   }
 }
 
@@ -1294,7 +1299,7 @@ header li a:hover {
 
 .footer {
   background-color: #2f303a;
-  width: 100%;
+  width: 1600px;
   margin: 0 auto;
 }
 @media screen and (min-width: 1200px) {
